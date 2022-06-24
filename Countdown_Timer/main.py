@@ -6,7 +6,7 @@ import time
 
 def countdown(time_input):
     while time_input:
-        minutes, seconds = divmod(minutes, 60)
+        minutes, seconds = divmod(time_input, 60)
         timer = '{:02d}:{:02d}'.format(minutes, seconds)
         print(timer, end = "\r")
         time.sleep(1)
